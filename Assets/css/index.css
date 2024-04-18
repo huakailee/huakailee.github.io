@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+header {
+    margin: 0px;
+    padding: 20px;
+    background: #818181;
+    color: white;
+    text-align: center;
+}
+
+.image{
+    border-radius: 2.5%;
+    max-width: 15pc;
+}
+
+body {
+    margin: 0pc;
+    background: #a0a0a0;
+}
+
+nav {
+    font-family: Arial;
+    text-align: center;
+    background: #ffffff;
+
+
+}
+
+nav a {
+    display: inline-block;
+    padding: 14px 16px;    
+}
+
+nav a:hover {
+    background: #dbdbdb;
+    color: white;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background: #b8b8b8;
+    color: #000000;
+}
+
+.program {
+    text-align: left;
+    margin-left: 5%;
+}
+
+.cir{
+    width: 110px;
+    aspect-ratio: 1;
+    display: inline-grid;
+    place-content: center;
+    margin: 40px 10px;
+    position: relative;
+    --color: #385191;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.cir::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    inset: 0;
+    background: conic-gradient(var(--color) calc(var(--percen)* 1%), #0000 0%, var(--color));
+}
+
+.cir::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #F3F3F3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cir .label {
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.--percen{
+    initial-value: 0;
+    syntax: "<number>";
+    inherits: true;
+}
+article {
+    float: left;
+    width: 75%;
+    padding: 30px 50px; 
+    background-color: white;
+}
+   
+ .center{
+    text-align: center;
+ }   
+
+aside {
+    float: left;
+    width: 25%;
+    padding: 30px 20px;
+}
+
+ul{
+    text-align: left;
+    list-style-type: none;
+}
+
+.life{
+    display: flex;
+    align-items: center;
+}
+
+.lifeLeft {
+    margin-right: 10px;
+}
+
+.lifeRight {
+    margin-left: 10px;
+}
+
+.icn{
+    max-width: 2.5pc;
+}
